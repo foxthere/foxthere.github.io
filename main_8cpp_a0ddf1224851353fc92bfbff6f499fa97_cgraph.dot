@@ -1,0 +1,16 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jianing::task1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejianing.html#af0416a104dee01e45893e3103c4cc40f",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jianing::task2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacejianing.html#ac48f60ccd79837aaeac9ae19318eeed2",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="jianing::ContainerFactorial\l::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjianing_1_1_container_factorial.html#ad5d0e9b55c10928c9c020461e21fc4ca",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="jianing::ContainerFactorial::end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjianing_1_1_container_factorial.html#aa6e61f13c48fd9b0fbf0407eb2d4f48d",tooltip=" "];
+}

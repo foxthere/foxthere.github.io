@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="jianing::rectangle_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjianing_1_1rectangle__t.html",tooltip=" "];
+  Node0 [label="jianing::PhoneBook\l::RecordType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjianing_1_1_phone_book_1_1_record_type.html",tooltip=" "];
 }

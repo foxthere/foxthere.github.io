@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>B3: B5-7/B5/task1.cpp Source File</title>
+<title>Calculated graphical work: B3-html/B3/task1.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">B3
+   <div id="projectname">Calculated graphical work
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_8b2807dcb070fb6e96a8509d731b7823.html">B5-7</a></li><li class="navelem"><a class="el" href="dir_780c47915b280144e11d33d0301e5ffc.html">B5</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f6cf85f5e8f1234b4f34e8a76433e08c.html">B3-html</a></li><li class="navelem"><a class="el" href="dir_8f60bf8b7c7538fbd66604076f220718.html">B3</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -48,27 +48,61 @@ $(function() {
 <div class="contents">
 <a href="task1_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tasks_8hpp.html">tasks.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="details_8hpp.html">details.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stream_function_8hpp.html">streamFunction.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="error_handling_8hpp.html">errorHandling.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="phone_book_8hpp.html">phoneBook.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bookmarks_8hpp.html">bookmarks.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands_phone_book_8hpp.html">commandsPhoneBook.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="info_8hpp.html">info.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacejianing_1_1_b5.html#afd45f2ed8fa914dc5bbc41bd53cd0818">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacejianing_1_1_b5.html#afd45f2ed8fa914dc5bbc41bd53cd0818">jianing::B5::task1</a>(std::istream&amp; istr, std::ostream&amp; ostr)</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacejianing.html#af0416a104dee01e45893e3103c4cc40f">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacejianing.html#af0416a104dee01e45893e3103c4cc40f">jianing::task1</a>()</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  std::set&lt;std::string&gt; words = {<a class="code" href="namespacejianing_1_1_b5_1_1sig.html#a3d666df6df77b6b2ac6472e5266a4e86">sig::str_istr_iter</a>(istr), <a class="code" href="namespacejianing_1_1_b5_1_1sig.html#a3d666df6df77b6b2ac6472e5266a4e86">sig::str_istr_iter</a>()};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="namespacejianing_1_1sf.html#a891c70c4519b3ef133e59c7d625173d4">sf::istreamNotEofAndFail</a>(istr, errInfoCode.first.c_str());</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  std::copy(words.begin(), words.end(), <a class="code" href="namespacejianing_1_1_b5_1_1sig.html#adbec0f7bb6510bff2151c3ebd9298f1c">sig::str_ostr_iter</a>(ostr, <span class="stringliteral">&quot;\n&quot;</span>));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="classjianing_1_1_phone_book.html">jianing::PhoneBook</a> phone_book;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classjianing_1_1_bookmarks.html">jianing::Bookmarks</a> marks(&amp;phone_book);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="namespacecommands__phone__book.html#ac1da61a137bafa85bb8ac65d41df494e">commands_phone_book::phone_book_mark</a> phone_mark = {phone_book, marks};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  std::string input_com;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">while</span> (std::getline(std::cin, input_com))</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (std::cin.fail())</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;ERROR! The value is too large to processing!\n&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (std::cin.bad())</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">throw</span> std::ios_base::failure(<span class="stringliteral">&quot;ERROR! A serious exception occurred in the import stream (in task1)!\n&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (input_com.empty())</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::istringstream std_stream(input_com);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string str_comm;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std_stream &gt;&gt; str_comm;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacecommands__phone__book.html#aedf5e3173dc50f02fb7639fcb3e12644">commands_phone_book::std_commands</a>.find(str_comm) == <a class="code" href="namespacecommands__phone__book.html#aedf5e3173dc50f02fb7639fcb3e12644">commands_phone_book::std_commands</a>.end())</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      std::cout &lt;&lt; info::ERR_INVALID_COM;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="namespacecommands__phone__book.html#aedf5e3173dc50f02fb7639fcb3e12644">commands_phone_book::std_commands</a>.at(str_comm)(phone_mark, std_stream);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astream_function_8hpp_html"><div class="ttname"><a href="stream_function_8hpp.html">streamFunction.hpp</a></div></div>
+<div class="ttc" id="anamespacecommands__phone__book_html_ac1da61a137bafa85bb8ac65d41df494e"><div class="ttname"><a href="namespacecommands__phone__book.html#ac1da61a137bafa85bb8ac65d41df494e">commands_phone_book::phone_book_mark</a></div><div class="ttdeci">std::pair&lt; jianing::PhoneBook &amp;, jianing::Bookmarks &amp; &gt; phone_book_mark</div><div class="ttdef"><b>Definition:</b> <a href="commands_phone_book_8hpp_source.html#l00011">commandsPhoneBook.hpp:11</a></div></div>
 <div class="ttc" id="atasks_8hpp_html"><div class="ttname"><a href="tasks_8hpp.html">tasks.hpp</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1sf_html_a891c70c4519b3ef133e59c7d625173d4"><div class="ttname"><a href="namespacejianing_1_1sf.html#a891c70c4519b3ef133e59c7d625173d4">jianing::sf::istreamNotEofAndFail</a></div><div class="ttdeci">void istreamNotEofAndFail(std::istream &amp;istr, const char *err_msg)</div><div class="ttdef"><b>Definition:</b> <a href="stream_function_8cpp_source.html#l00027">streamFunction.cpp:27</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1_b5_1_1sig_html_a3d666df6df77b6b2ac6472e5266a4e86"><div class="ttname"><a href="namespacejianing_1_1_b5_1_1sig.html#a3d666df6df77b6b2ac6472e5266a4e86">jianing::B5::sig::str_istr_iter</a></div><div class="ttdeci">std::istream_iterator&lt; std::string &gt; str_istr_iter</div><div class="ttdef"><b>Definition:</b> <a href="details_8hpp_source.html#l00047">details.hpp:47</a></div></div>
-<div class="ttc" id="adetails_8hpp_html"><div class="ttname"><a href="details_8hpp.html">details.hpp</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1_b5_html_afd45f2ed8fa914dc5bbc41bd53cd0818"><div class="ttname"><a href="namespacejianing_1_1_b5.html#afd45f2ed8fa914dc5bbc41bd53cd0818">jianing::B5::task1</a></div><div class="ttdeci">void task1(std::istream &amp;istr, std::ostream &amp;ostr)</div><div class="ttdef"><b>Definition:</b> <a href="task1_8cpp_source.html#l00009">task1.cpp:9</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1_b5_1_1sig_html_adbec0f7bb6510bff2151c3ebd9298f1c"><div class="ttname"><a href="namespacejianing_1_1_b5_1_1sig.html#adbec0f7bb6510bff2151c3ebd9298f1c">jianing::B5::sig::str_ostr_iter</a></div><div class="ttdeci">std::ostream_iterator&lt; std::string &gt; str_ostr_iter</div><div class="ttdef"><b>Definition:</b> <a href="details_8hpp_source.html#l00048">details.hpp:48</a></div></div>
-<div class="ttc" id="aerror_handling_8hpp_html"><div class="ttname"><a href="error_handling_8hpp.html">errorHandling.hpp</a></div></div>
+<div class="ttc" id="aclassjianing_1_1_phone_book_html"><div class="ttname"><a href="classjianing_1_1_phone_book.html">jianing::PhoneBook</a></div><div class="ttdef"><b>Definition:</b> <a href="phone_book_8hpp_source.html#l00009">phoneBook.hpp:10</a></div></div>
+<div class="ttc" id="anamespacecommands__phone__book_html_aedf5e3173dc50f02fb7639fcb3e12644"><div class="ttname"><a href="namespacecommands__phone__book.html#aedf5e3173dc50f02fb7639fcb3e12644">commands_phone_book::std_commands</a></div><div class="ttdeci">const std::map&lt; std::string, std_command &gt; std_commands</div><div class="ttdef"><b>Definition:</b> <a href="commands_phone_book_8hpp_source.html#l00020">commandsPhoneBook.hpp:20</a></div></div>
+<div class="ttc" id="aphone_book_8hpp_html"><div class="ttname"><a href="phone_book_8hpp.html">phoneBook.hpp</a></div></div>
+<div class="ttc" id="acommands_phone_book_8hpp_html"><div class="ttname"><a href="commands_phone_book_8hpp.html">commandsPhoneBook.hpp</a></div></div>
+<div class="ttc" id="aclassjianing_1_1_bookmarks_html"><div class="ttname"><a href="classjianing_1_1_bookmarks.html">jianing::Bookmarks</a></div><div class="ttdef"><b>Definition:</b> <a href="bookmarks_8hpp_source.html#l00007">bookmarks.hpp:8</a></div></div>
+<div class="ttc" id="ainfo_8hpp_html"><div class="ttname"><a href="info_8hpp.html">info.hpp</a></div></div>
+<div class="ttc" id="anamespacejianing_html_af0416a104dee01e45893e3103c4cc40f"><div class="ttname"><a href="namespacejianing.html#af0416a104dee01e45893e3103c4cc40f">jianing::task1</a></div><div class="ttdeci">void task1()</div><div class="ttdef"><b>Definition:</b> <a href="task1_8cpp_source.html#l00009">task1.cpp:9</a></div></div>
+<div class="ttc" id="abookmarks_8hpp_html"><div class="ttname"><a href="bookmarks_8hpp.html">bookmarks.hpp</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

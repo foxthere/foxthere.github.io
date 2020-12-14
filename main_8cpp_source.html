@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>B3: B5-7/B5/main.cpp Source File</title>
+<title>Calculated graphical work: B3-html/B3/main.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">B3
+   <div id="projectname">Calculated graphical work
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_8b2807dcb070fb6e96a8509d731b7823.html">B5-7</a></li><li class="navelem"><a class="el" href="dir_780c47915b280144e11d33d0301e5ffc.html">B5</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f6cf85f5e8f1234b4f34e8a76433e08c.html">B3-html</a></li><li class="navelem"><a class="el" href="dir_8f60bf8b7c7538fbd66604076f220718.html">B3</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -46,53 +46,72 @@ $(function() {
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="info_8hpp.html">info.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tasks_8hpp.html">tasks.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="main_8cpp.html#a7be7b3f3b810d259483db57fef9b4c4c">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a7be7b3f3b810d259483db57fef9b4c4c">main</a>(<span class="keywordtype">int</span> args, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (args != 2)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (argc != 2)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR! Wrong number of parameters! It should be 2!\n&quot;</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR! Please enter the parameters [number of the task]!\n&quot;</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">switch</span> (std::stoi(argv[1]))</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="namespacejianing_1_1_b5.html#afd45f2ed8fa914dc5bbc41bd53cd0818">jianing::B5::task1</a>(std::cin, std::cout);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="namespacejianing_1_1_b5.html#a0d35780ff9e19792e6a5f64d0ac3bcea">jianing::B5::task2</a>(std::cin, std::cout);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR! Wrong number of parameters! It should be [1] or [2]!\n&quot;</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="namespacejianing.html#af0416a104dee01e45893e3103c4cc40f">jianing::task1</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="namespacejianing.html#ac48f60ccd79837aaeac9ae19318eeed2">jianing::task2</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR! Unrecognizable parameters! Please enter number [1] or [2]\n&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; exc)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; exc)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cerr &lt;&lt; exc.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Catch error [invalid_argument] and the error message is：\n&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        &lt;&lt; exc.what();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::runtime_error&amp; exc)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Catch error [runtime_error] and the error message is：\n&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        &lt;&lt; exc.what();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::out_of_range&amp; exc)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Catch error [out_of_range] and the error message is：\n&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        &lt;&lt; exc.what();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;An unrecognized exception occurred in the program!\n&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="amain_8cpp_html_a7be7b3f3b810d259483db57fef9b4c4c"><div class="ttname"><a href="main_8cpp.html#a7be7b3f3b810d259483db57fef9b4c4c">main</a></div><div class="ttdeci">int main(int args, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
 <div class="ttc" id="atasks_8hpp_html"><div class="ttname"><a href="tasks_8hpp.html">tasks.hpp</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1_b5_html_afd45f2ed8fa914dc5bbc41bd53cd0818"><div class="ttname"><a href="namespacejianing_1_1_b5.html#afd45f2ed8fa914dc5bbc41bd53cd0818">jianing::B5::task1</a></div><div class="ttdeci">void task1(std::istream &amp;istr, std::ostream &amp;ostr)</div><div class="ttdef"><b>Definition:</b> <a href="task1_8cpp_source.html#l00009">task1.cpp:9</a></div></div>
-<div class="ttc" id="anamespacejianing_1_1_b5_html_a0d35780ff9e19792e6a5f64d0ac3bcea"><div class="ttname"><a href="namespacejianing_1_1_b5.html#a0d35780ff9e19792e6a5f64d0ac3bcea">jianing::B5::task2</a></div><div class="ttdeci">void task2(std::istream &amp;istr, std::ostream &amp;ostr)</div><div class="ttdef"><b>Definition:</b> <a href="task2_8cpp_source.html#l00010">task2.cpp:10</a></div></div>
+<div class="ttc" id="ainfo_8hpp_html"><div class="ttname"><a href="info_8hpp.html">info.hpp</a></div></div>
+<div class="ttc" id="anamespacejianing_html_af0416a104dee01e45893e3103c4cc40f"><div class="ttname"><a href="namespacejianing.html#af0416a104dee01e45893e3103c4cc40f">jianing::task1</a></div><div class="ttdeci">void task1()</div><div class="ttdef"><b>Definition:</b> <a href="task1_8cpp_source.html#l00009">task1.cpp:9</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
+<div class="ttc" id="anamespacejianing_html_ac48f60ccd79837aaeac9ae19318eeed2"><div class="ttname"><a href="namespacejianing.html#ac48f60ccd79837aaeac9ae19318eeed2">jianing::task2</a></div><div class="ttdeci">void task2()</div><div class="ttdef"><b>Definition:</b> <a href="task2_8cpp_source.html#l00006">task2.cpp:6</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
