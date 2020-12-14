@@ -1,0 +1,10 @@
+digraph "BOOST_AUTO_TEST_CASE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jianing::Rectangle\l::move",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjianing_1_1_rectangle.html#a18f67e3f81c155978c1fcafdcb2822ec",tooltip=" "];
+}
